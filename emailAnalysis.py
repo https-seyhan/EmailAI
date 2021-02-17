@@ -11,7 +11,6 @@ class readEmails:
     
     def getEmail(self, email):
         print("Get the content of the Email", email)
-        
         self.pst.open(email)
         root = self.pst.get_root_folder()
         for folder in root.sub_folders:
