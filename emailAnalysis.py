@@ -8,7 +8,7 @@ class readEmails:
     
     def __init__(self):
         print("Emails")
-    
+   
     def getEmail(self, email):
         print("Get the content of the Email", email)
         self.pst.open(email)
