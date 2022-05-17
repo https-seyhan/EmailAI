@@ -7,7 +7,6 @@ import eml_parser
 
 class readFiles:
 	
-	print('Read Files')
 	
 	def __init__(self):
 		#self.read_memory()
