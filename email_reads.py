@@ -4,7 +4,7 @@ import psutil
 import datetime
 import json
 import eml_parser
-#read email
+#read email context
 class readFiles:
 	name= 'read email files'
 	print('Read Files')
