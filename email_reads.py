@@ -9,7 +9,6 @@ class readFiles:
 	name= 'read email files'
 	print('Read Files')
 
-
 	def __init__(self):
 		#self.read_memory()
 		#print(psutil.virtual_memory())
