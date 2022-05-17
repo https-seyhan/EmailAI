@@ -23,7 +23,7 @@ class readFiles:
   			raw_email = email.read()
 		ep = eml_parser.EmlParser()
 		parsed_eml = ep.decode_email_bytes(raw_email)
-		print(json.dumps(parsed_eml, default=json_serial))
+		print(json.dumps(parsed_eml))
 
 
 
