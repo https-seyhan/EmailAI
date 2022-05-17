@@ -8,7 +8,6 @@ import eml_parser
 class readFiles:
 	name= 'read email files'
 	print('Read Files')
-
 	def __init__(self):
 		
 		#print(psutil.virtual_memory())
