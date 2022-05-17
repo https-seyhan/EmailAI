@@ -11,10 +11,6 @@ class readFiles:
 
 
 	def __init__(self):
-		#self.read_memory()
-		#print(psutil.virtual_memory())
-		print('Virtual Memory Percent ', psutil.virtual_memory().percent)
-		print(psutil)
 		self.read_eml_file()
 
 
@@ -23,11 +19,15 @@ class readFiles:
   			raw_email = email.read()
 		ep = eml_parser.EmlParser()
 		parsed_eml = ep.decode_email_bytes(raw_email)
-		print(json.dumps(parsed_eml, indent=4, sort_keys=True, default=str))
+		#print(json.dumps(parsed_eml))
 		self.get_information(json.dumps(parsed_eml, indent=4, sort_keys=True, default=str))
+		
 	
 	def get_information(self, text):
-		print('Email Text ', text)
+		#print('Email Text ', text)
+		print(type(text))
+
+		
 
 
 
