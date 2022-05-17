@@ -37,4 +37,3 @@ if __name__ == '__main__':
     #execute and cleanup
     app.exec_()
     del view
-
