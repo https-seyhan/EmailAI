@@ -23,7 +23,6 @@ class readFiles:
   			raw_email = email.read()
 
 	
-
 #files = readFiles()
 readFiles()
 #files
