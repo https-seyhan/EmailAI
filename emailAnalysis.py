@@ -1,4 +1,4 @@
-import pypff 
+import pypff #module
 import os
 os.chdir('/home/saul/emails')
 
