@@ -10,7 +10,7 @@ class readFiles:
 	print('Read Files')
 
 	def __init__(self):
-		#self.read_memory()
+		
 		#print(psutil.virtual_memory())
 		print('Virtual Memory Percent ', psutil.virtual_memory().percent)
 		print(psutil)
