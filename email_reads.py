@@ -7,7 +7,7 @@ import eml_parser
 
 class readFiles:
 	
-	name= 'read csv files'
+	name= 'read email files'
 	
 	def __init__(self):
 		#self.read_memory()
