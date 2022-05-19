@@ -23,7 +23,6 @@ class readFiles:
 		print(type(text))
 		
 
-
 #files = readFiles()
 readFiles()
 #files
