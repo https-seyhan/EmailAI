@@ -13,6 +13,7 @@ class readEmails:
         print("Get the content of the Email", email)
         self.pst.open(email)
         root = self.pst.get_root_folder()
+        
         for folder in root.sub_folders:
             print("folder ", folder)
             self.__getMesageDetails(folder)
