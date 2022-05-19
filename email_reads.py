@@ -22,7 +22,6 @@ class readFiles:
 	def get_information(self, text):
 		#print('Email Text ', text)
 		print(type(text))
-
 		
 
 
