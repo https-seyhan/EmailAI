@@ -2,7 +2,7 @@ import pypff #module
 import os
 os.chdir('/home/saul/emails')
 
-# Email
+# Email class
 class readEmails:
     # Class attributes
     pst = pypff.file()
