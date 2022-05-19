@@ -23,7 +23,6 @@ class readFiles:
 		#print('Email Text ', text)
 		print(type(text))
 		
-
 #files = readFiles()
 readFiles()
 #files
