@@ -42,7 +42,8 @@ class readEmails:
         #content = msg.plain_text_body.decode()
         #sender = msg.sender_name
         #header = msg.transport_headers
-        #sent_time = msg.delivery_time      
+        #sent_time = msg.delivery_time    
+        
 #if __name__ == '__main__':
 reademails = readEmails()
 reademails.getEmail('DestinationPst.pst')
