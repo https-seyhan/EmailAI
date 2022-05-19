@@ -21,7 +21,7 @@ class readEmails:
         print(folder)
         count = folder.get_number_of_sub_items()
         print("Counts ", count)
-     
+    
         #self.__getMesageDetails(folder.get_sub_item(0))
         #self.__getMesageDetails(folder.sub_messages(0))
         self.pst.close()
