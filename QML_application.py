@@ -14,7 +14,7 @@ if __name__ == '__main__':
     #Format and sort the data
     data_list = list(data.values())
     data_list.sort()
-
+    
     #Set up the application window
     app = QGuiApplication(sys.argv)
     view = QQuickView()
