@@ -31,9 +31,13 @@ class readFiles:
 		for item in json_data:
 			print( "Item ", item)
 		
-		print(json_data['body'])
-
+		#print(json_data['body'])
+		#print(json_data['header'])
+		self.get_header(json_data)
 		
+
+	def get_header(self, json_object):
+		print(json_object['header'])
 
 
 
