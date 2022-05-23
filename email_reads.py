@@ -3,7 +3,7 @@ import os
 import psutil
 import datetime
 import json
-import eml_parser
+import eml_parser #email
 
 class readFiles:
 	name= 'read email files'
