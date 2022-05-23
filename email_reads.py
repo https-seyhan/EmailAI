@@ -38,7 +38,8 @@ class readFiles:
 		
 
 	def get_header(self, json_object):
-		print(json_object['header']['date'])
+		print('Date ', json_object['header']['date'])
+		print('From ', json_object['header']['from'])
 		
 		for item in json_object['header']:
 			print(item)
