@@ -76,7 +76,6 @@ Page {
             anchors.centerIn: root
             source: "./corona-update.jpg"
             opacity: 0.5
-
         }
 
         ListView {
