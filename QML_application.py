@@ -33,7 +33,7 @@ if __name__ == '__main__':
     if view.status() == QQuickView.Error:
         sys.exit(-1)
     view.show()
-
+    
     #execute and cleanup
     app.exec_()
     del view
