@@ -1,2 +1,2 @@
 # EmailAI
-Email Content Analysis using Advanced AI methods
+Email Content Analysis using Advanced AI methods.
