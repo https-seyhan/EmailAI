@@ -24,9 +24,14 @@ class readFiles:
 		
 	
 	def get_information(self, text):
-		print('Email Text ', text)
+		#print('Email Text ', text)
 		print(type(text))
 		json_data = json.loads(text)
+		
+		for item in json_data:
+			print( "Item ", item)
+		
+		print(json_data['body'])
 
 		
 
