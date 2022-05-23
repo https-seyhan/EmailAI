@@ -28,8 +28,9 @@ class readFiles:
 		print(type(text))
 		json_data = json.loads(text)
 		
-		for item in json_data:
-			print( "Item ", item)
+		
+		#for item in json_data:
+		#	print( "Item ", item)
 		
 		#print(json_data['body'])
 		#print(json_data['header'])
@@ -37,7 +38,11 @@ class readFiles:
 		
 
 	def get_header(self, json_object):
-		print(json_object['header'])
+		print(json_object['header']['date'])
+		
+		for item in json_object['header']:
+			print(item)
+			#print(item['date'])
 
 
 
