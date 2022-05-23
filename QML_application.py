@@ -4,7 +4,7 @@ from PySide6.QtQuick import QQuickView
 from PySide6.QtCore import QStringListModel, Qt, QUrl
 from PySide6.QtGui import QGuiApplication
 
-if __name__ == '__main__':  
+if __name__ == '__main__': 
     url = "http://country.io/names.json"
     response = urllib.request.urlopen(url)
     data = json.loads(response.read().decode('utf-8'))
