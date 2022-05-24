@@ -13,6 +13,7 @@ class readFiles:
 	def __init__(self):
 		self.read_eml_file()
 
+
 	def read_eml_file(self):
 		with open('sample_file.eml', 'rb') as email:
   			raw_email = email.read()
@@ -27,12 +28,12 @@ class readFiles:
 		print(type(text))
 		json_data = json.loads(text)
 		
+		
 
 		#print(json_data['body'])
 		#print(json_data['header'])
 		self.get_header(json_data)
 		
-
 	def get_header(self, json_object):
 		print('Date ', json_object['header']['date'], '\n')
 		print('From ', json_object['header']['from'], '\n')
