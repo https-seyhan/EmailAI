@@ -33,22 +33,22 @@ class readFiles:
 		self.get_header(json_data)
 		
 	def get_header(self, json_object):
-		print('Date ', json_object['header']['date'], '\n')
-		print('From ', json_object['header']['from'], '\n')
-		print('Received ', json_object['header']['received'], '\n')
-		print('Received Domain', json_object['header']['received_domain'], '\n')
-		print('Received Email', json_object['header']['received_email'], '\n')
-		print('Received Foremail', json_object['header']['received_foremail'], '\n')
-		print('Received IP', json_object['header']['received_ip'], '\n')
-		print('Subject ', json_object['header']['subject'], '\n')
-		print('To ', json_object['header']['to'], '\n')
+		#print('Date ', json_object['header']['date'], '\n')
+		#print('From ', json_object['header']['from'], '\n')
+		#print('Received ', json_object['header']['received'], '\n')
+		#print('Received Domain', json_object['header']['received_domain'], '\n')
+		#print('Received Email', json_object['header']['received_email'], '\n')
+		#print('Received Foremail', json_object['header']['received_foremail'], '\n')
+		#print('Received IP', json_object['header']['received_ip'], '\n')
+		#print('Subject ', json_object['header']['subject'], '\n')
+		#print('To ', json_object['header']['to'], '\n')
 		
 		for item in json_object['header']:
 			print(item)
 			#print(item['date'])
 			if item == 'received':
 				print('Received called')
-				print(len(json_object['header']['received']))
+				#print(len(json_object['header']['received']))
 				
 				for element in range(len(json_object['header']['received'])):
 					print('Received elements ', json_object['header']['received'][element])
