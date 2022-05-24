@@ -53,6 +53,8 @@ class readFiles:
 			#print(item['date'])
 			if item == 'received':
 				print('Received called')
+				for key in item:
+					print(key)
 
 
 
