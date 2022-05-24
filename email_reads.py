@@ -24,7 +24,7 @@ class readFiles:
 	
 	def get_information(self, text):
 		#print('Email Text ', text)
-		print(type(text))
+		#print(type(text))
 		json_data = json.loads(text)
 		
 		
@@ -44,7 +44,7 @@ class readFiles:
 		#print('To ', json_object['header']['to'], '\n')
 		
 		for item in json_object['header']:
-			print(item)
+			#print(item)
 			#print(item['date'])
 			if item == 'received':
 				print('Received called')
