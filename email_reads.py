@@ -9,8 +9,10 @@ class readFiles:
 	name= 'read email files'
 	print('Read Files')
 
+
 	def __init__(self):
 		self.read_eml_file()
+
 
 	def read_eml_file(self):
 		with open('sample_file.eml', 'rb') as email:
@@ -20,6 +22,7 @@ class readFiles:
 		#print(json.dumps(parsed_eml))
 		self.get_information(json.dumps(parsed_eml, indent=4, sort_keys=True, default=str))
 		
+	
 	def get_information(self, text):
 		#print('Email Text ', text)
 		print(type(text))
@@ -33,6 +36,7 @@ class readFiles:
 		#print(json_data['header'])
 		self.get_header(json_data)
 		
+
 	def get_header(self, json_object):
 		print('Date ', json_object['header']['date'], '\n')
 		print('From ', json_object['header']['from'], '\n')
@@ -49,7 +53,8 @@ class readFiles:
 			#print(item['date'])
 			if item == 'received':
 				print('Received called')
-				print(json_object['header']['received'][0])
+				print(len(json_object['header']['received']))
+				print('Received elements ', json_object['header']['received'][0])
 
 
 
