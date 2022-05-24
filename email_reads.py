@@ -51,6 +51,8 @@ class readFiles:
 		for item in json_object['header']:
 			print(item)
 			#print(item['date'])
+			if item == 'received':
+				print('Received called')
 
 
 
