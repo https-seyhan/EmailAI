@@ -53,7 +53,6 @@ class readFiles:
 					readFiles.email_details.append(elements)
 
 
-
 #files = readFiles()
 readFiles()
 #files
