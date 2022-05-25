@@ -48,14 +48,14 @@ class readFiles:
 			#print(item)
 			#print(item['date'])
 			if item == 'received':
-				print('Received called')
+				#print('Received called')
 				#print(len(json_object['header']['received']))
 				
 				for element in range(len(json_object['header']['received'])):
-					print('Received elements ', json_object['header']['received'][element])
+					#print('Received elements ', json_object['header']['received'][element])
 					elements = list(json_object['header']['received'][element].items())
 					readFiles.email_details.append(elements)
-				print ('List ', readFiles.email_details)
+		print ('List ', readFiles.email_details)
 
 
 
