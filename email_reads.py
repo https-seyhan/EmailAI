@@ -13,6 +13,7 @@ class readFiles:
 		self.email_context = [['', '','', '', '', '']]
 		self.read_eml_file()
 
+
 	def read_eml_file(self):
 		with open('sample_file.eml', 'rb') as email:
   			raw_email = email.read()
@@ -20,12 +21,14 @@ class readFiles:
 		parsed_eml = ep.decode_email_bytes(raw_email)
 		#print(json.dumps(parsed_eml))
 		self.get_information(json.dumps(parsed_eml, indent=4, sort_keys=True, default=str))
-
+		
+	
 	def get_information(self, text):
 		#print('Email Text ', text)
 		#print(type(text))
 		json_data = json.loads(text)
-	
+		
+		
 		#print(json_data['body'])
 		#print(json_data['header'])
 		self.get_header(json_data)
@@ -60,7 +63,6 @@ class readFiles:
 				tuple_element = 0
 				print('List Element Size ', list_element)
 				print('List ', readFiles.email_details[list_recurse][list_element])
-				
 				while tuple_element < list_element:
 					print('tuple_element ', tuple_element)
 					print(readFiles.email_details[list_recurse][list_element][tuple_element])
