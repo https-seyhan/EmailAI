@@ -54,6 +54,7 @@ class readFiles:
 					print('Received elements ', json_object['header']['received'][element])
 					elements = list(json_object['header']['received'][element].items())
 					readFiles.email_details.append(elements)
+				print ('List ', readFiles)
 
 
 
