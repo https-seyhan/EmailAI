@@ -58,8 +58,10 @@ class readFiles:
 		#print ('List ', readFiles.email_details[0][0])
 		
 		for list_recurse in range(len(readFiles.email_details)):
-								  print('list_recurse', readFiles.email_details[list_recurse])
-								  print('Tuple Size ', len(readFiles.email_details[list_recurse]))
+			for list_element in range(len(readFiles.email_details[list_recurse])):
+				print(list_element)
+				print(readFiles.email_details[list_recurse][list_element])
+
 
 
 
