@@ -59,8 +59,14 @@ class readFiles:
 		
 		for list_recurse in range(len(readFiles.email_details)):
 			for list_element in range(len(readFiles.email_details[list_recurse])):
+				tuple_element = 0
 				print(list_element)
 				print(readFiles.email_details[list_recurse][list_element])
+				while tuple_element <= list_element:
+					print('tuple_element ', tuple_element)
+					print(readFiles.email_details[list_recurse][list_element][tuple_element])
+					tuple_element += 1
+					
 
 
 
