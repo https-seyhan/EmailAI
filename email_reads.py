@@ -10,7 +10,7 @@ class readFiles:
 	email_details = []
 
 	def __init__(self):
-		self.email_context = []
+		self.email_context = [['', '','', '', '', '']]
 		self.read_eml_file()
 
 
@@ -55,7 +55,8 @@ class readFiles:
 					#print('Received elements ', json_object['header']['received'][element])
 					elements = list(json_object['header']['received'][element].items())
 					readFiles.email_details.append(elements)
-		print ('List ', readFiles.email_details)
+		print ('List ', readFiles.email_details[0])
+		print('', len(readFiles.email_details[0]))
 
 
 
