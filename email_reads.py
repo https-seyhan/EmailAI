@@ -52,7 +52,6 @@ class readFiles:
 					elements = list(json_object['header']['received'][element].items())
 					readFiles.email_details.append(elements)
 
-
 #files = readFiles()
 readFiles()
 #files
