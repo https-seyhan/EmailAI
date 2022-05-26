@@ -26,7 +26,7 @@ class readEmails:
         #self.__getMesageDetails(folder.get_sub_item(0))
         #self.__getMesageDetails(folder.sub_messages(0))
         self.pst.close()
-    
+   
     def __getMesageDetails(self, folder):
         print("Folder ", folder)
         print("Messages  ", folder.sub_messages)
