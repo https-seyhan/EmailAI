@@ -15,21 +15,22 @@ class readFiles:
 		self.email_context = [['', '','', '', '', '']]
 		self.read_eml_file()
 
+
 	def read_eml_file(self):
 		with open('sample_file.eml', 'rb') as email:
   			raw_email = email.read()
-
 		ep = eml_parser.EmlParser()
 		parsed_eml = ep.decode_email_bytes(raw_email)
 		#print(json.dumps(parsed_eml))
 		self.get_information(json.dumps(parsed_eml, indent=4, sort_keys=True, default=str))
-
-
+		
+	
 	def get_information(self, text):
 		#print('Email Text ', text)
 		#print(type(text))
 		json_data = json.loads(text)
-	
+		
+		
 		#print(json_data['body'])
 		#print(json_data['header'])
 		self.get_header(json_data)
@@ -51,7 +52,7 @@ class readFiles:
 			if item == 'received':
 				#print('Received called')
 				#print(len(json_object['header']['received']))
-				
+			
 				for element in range(len(json_object['header']['received'])):
 					#print('Received elements ', json_object['header']['received'][element])
 					elements = list(json_object['header']['received'][element].items())
