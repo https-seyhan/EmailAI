@@ -18,7 +18,7 @@ class readEmails:
         for folder in root.sub_folders:
             print("folder ", folder)
             self.__getMesageDetails(folder)
-    
+   
         folder = root.get_sub_folder(1)
         print(folder)
         count = folder.get_number_of_sub_items()
