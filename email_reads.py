@@ -28,7 +28,7 @@ class readFiles:
 		#print('Email Text ', text)
 		#print(type(text))
 		json_data = json.loads(text)
-		
+	
 		#print(json_data['body'])
 		#print(json_data['header'])
 		self.get_header(json_data)
