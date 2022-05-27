@@ -43,7 +43,7 @@ class readFiles:
 		#print('Received IP', json_object['header']['received_ip'], '\n')
 		#print('Subject ', json_object['header']['subject'], '\n')
 		#print('To ', json_object['header']['to'], '\n')
-	
+
 		for item in json_object['header']:
 			#print(item)
 			#print(item['date'])
