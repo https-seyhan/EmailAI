@@ -14,7 +14,7 @@ class readFiles:
 	def __init__(self):
 		self.email_context = [['', '','', '', '', '']]
 		self.read_eml_file()
-121969
+
 	def read_eml_file(self):
 		with open('sample_file.eml', 'rb') as email:
   			raw_email = email.read()
