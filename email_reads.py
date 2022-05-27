@@ -5,12 +5,12 @@ import datetime
 import json
 import eml_parser
 
-os.chdir('/home/saul/kaggle')
+os.chdir('/hAU
+ome/saul/kaggle')
 
 class readFiles:
 	name= 'read email files'
 	email_details = []
-
 	def __init__(self):
 		self.email_context = [['', '','', '', '', '']]
 		self.read_eml_file()
