@@ -14,7 +14,7 @@ class readFiles:
 	def __init__(self):
 		self.email_context = [['', '','', '', '', '']]
 		self.read_eml_file()
-
+121969
 	def read_eml_file(self):
 		with open('sample_file.eml', 'rb') as email:
   			raw_email = email.read()
@@ -22,7 +22,7 @@ class readFiles:
 		parsed_eml = ep.decode_email_bytes(raw_email)
 		#print(json.dumps(parsed_eml))
 		self.get_information(json.dumps(parsed_eml, indent=4, sort_keys=True, default=str))
-	
+
 	def get_information(self, text):
 		#print('Email Text ', text)
 		#print(type(text))
