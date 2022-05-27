@@ -5,8 +5,7 @@ import datetime
 import json
 import eml_parser
 
-os.chdir('/hAU
-ome/saul/kaggle')
+
 
 class readFiles:
 	name= 'read email files'
