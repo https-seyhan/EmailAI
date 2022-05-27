@@ -5,7 +5,7 @@ import datetime
 import json
 import eml_parser
 
-# Get email
+# Get email data
 class readFiles:
 	name= 'read email files'
 	email_details = []
