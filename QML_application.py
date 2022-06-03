@@ -31,7 +31,7 @@ if __name__ == '__main__':
 
     #Show the window
     if view.status() == QQuickView.Error:
-        sys.exit(-1)
+        sys.exit(-1) #
     view.show()
    
     #execute and cleanup
