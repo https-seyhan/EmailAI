@@ -24,7 +24,7 @@ if __name__ == '__main__':
     my_model = QStringListModel()
     my_model.setStringList(data_list)
     view.rootContext().setContextProperty("myModel",my_model)
-   
+  
     #Load the QML file
     qml_file = os.path.join(os.path.dirname(__file__),"view.qml")
     view.setSource(QUrl.fromLocalFile(os.path.abspath(qml_file)))
