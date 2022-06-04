@@ -10,7 +10,7 @@ if __name__ == '__main__':
     data = json.loads(response.read().decode('utf-8'))
     print("Type ", type(data))
     #data= {1:"Court", 2:"Decision", 3:"Julian"}
- 
+
     #Format and sort the data
     data_list = list(data.values())
     data_list.sort()
