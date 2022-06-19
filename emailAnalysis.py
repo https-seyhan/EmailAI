@@ -6,7 +6,7 @@ os.chdir('/home/saul/emails')
 class readEmails:
     # Class attributes
     pst = pypff.file()
-
+    
     def __init__(self):
         print("Emails")
 
