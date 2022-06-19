@@ -11,7 +11,7 @@ class readFiles:
 	name= 'read email files'
 	email_details = []
 	def __init__(self):
-	
+
 		self.email_context = [['', '','', '', '', '']]
 		self.read_eml_file()
 
