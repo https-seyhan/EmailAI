@@ -36,7 +36,7 @@ class readEmails:
             message_dict = processMessage(message)
             message_list.append(message_dict)
         example = processMessage(out.msg)
-       
+      
         #print("Message List ", message_list)
         #subject = msg.subject
         #content = msg.plain_text_body.decode()
