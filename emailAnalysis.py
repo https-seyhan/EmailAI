@@ -30,7 +30,7 @@ class readEmails:
         print("Folder ", folder)
         print("Messages  ", folder.sub_messages)
         message_list = []
-     
+    
         for message in folder.sub_messages:
             print("Message ", message)
             message_dict = processMessage(message)
