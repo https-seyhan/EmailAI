@@ -8,6 +8,7 @@ if __name__ == '__main__':
     url = "http://country.io/names.json" # get data
     response = urllib.request.urlopen(url)
     data = json.loads(response.read().decode('utf-8'))
+    
     print("Type ", type(data))
     #data= {1:"Court", 2:"Decision", 3:"Julian"}
 
