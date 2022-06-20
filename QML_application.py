@@ -11,7 +11,7 @@ if __name__ == '__main__':
    
     print("Type ", type(data))
     #data= {1:"Court", 2:"Decision", 3:"Julian"}
-
+    
     #Format and sort the data
     data_list = list(data.values())
     data_list.sort()
