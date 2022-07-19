@@ -67,7 +67,8 @@ class readFiles:
 					print('tuple_element ', tuple_element)
 					#print('tuple_element size ', len(tuple_element))
 					print('List Recurse ', list_recurse)
-					print('List Element ', list_recurse)					
+					print('List Element ', list_element)
+					print('Tuple Element ', tuple_element)
 
 					print("Elements ", readFiles.email_details[list_recurse][list_element][tuple_element])
 					read_element = readFiles.email_details[list_recurse][list_element][tuple_element]
