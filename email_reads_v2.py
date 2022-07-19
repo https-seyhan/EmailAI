@@ -75,9 +75,9 @@ class readFiles:
 						print('Tuple Element size is ', tuple_element)
 						print('Read Elements', read_element)
 						
-
-					print("Elements ", readFiles.email_details[list_recurse][list_element][tuple_element])
-					read_element = readFiles.email_details[list_recurse][list_element][tuple_element]
+					else:
+						print("Elements ", readFiles.email_details[list_recurse][list_element][tuple_element])
+						read_element = readFiles.email_details[list_recurse][list_element][tuple_element]
 					print('Type ', type(read_element))
 					tuple_element += 1
 					
