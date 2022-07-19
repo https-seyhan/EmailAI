@@ -69,6 +69,10 @@ class readFiles:
 					print('List Recurse ', list_recurse)
 					print('List Element ', list_element)
 					print('Tuple Element ', tuple_element)
+					
+					if tuple_element > 1:
+						print('Tuple Element size is ', tuple_element)
+						print('Tuple Elementt Type ', len(tuple_element))
 
 					print("Elements ", readFiles.email_details[list_recurse][list_element][tuple_element])
 					read_element = readFiles.email_details[list_recurse][list_element][tuple_element]
