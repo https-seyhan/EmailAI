@@ -28,8 +28,8 @@ class readFiles:
 	def get_information(self, text):
 		#print('Email Text ', text)
 		#print(type(text))
-		json_data = json.loads(text)
-
+		json_data = json.loads(text) #parse a valid JSON string and convert it into a Python Dictionary
+	
 		self.get_header(json_data)
 		
 	def get_header(self, json_object):
