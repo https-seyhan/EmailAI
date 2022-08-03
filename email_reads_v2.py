@@ -80,7 +80,7 @@ class readFiles:
 						read_element = readFiles.email_details[list_recurse][list_element][tuple_element]
 					print('Type ', type(read_element))
 					tuple_element += 1
-					
+			print ('Email Details ', readFiles.email_details)
 
 
 
