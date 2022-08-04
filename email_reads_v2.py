@@ -28,9 +28,9 @@ class readFiles:
 	def get_information(self, text):
 		#print('Email Text ', text)
 		#print(type(text))
-		json_data = json.loads(text) #parse a valid JSON string and convert it into a Python Dictionary
+		json_data_dict = json.loads(text) #parse a valid JSON string and convert it into a Python Dictionary
 	
-		self.get_header(json_data)
+		self.get_header(json_data_dict)
 		
 	def get_header(self, json_object):
 		#print('Date ', json_object['header']['date'], '\n')
@@ -58,17 +58,14 @@ class readFiles:
 		
 		for list_recurse in range(len(readFiles.email_details)):
 			for list_element in range(len(readFiles.email_details[list_recurse])):
-				print('Tuple Size ', len(readFiles.email_details[list_recurse][list_element]))
+				#print('Tuple Size ', len(readFiles.email_details[list_recurse][list_element]))
 				tuple_element = 0
-				print('List Element Size ', list_element)
-				print('List ', readFiles.email_details[list_recurse][list_element])
+				#print('List Element Size ', list_element)
+				#print('List ', readFiles.email_details[list_recurse][list_element])
 				
 				while tuple_element < list_element:
 					print('tuple_element ', tuple_element)
 					#print('tuple_element size ', len(tuple_element))
-					print('List Recurse ', list_recurse)
-					print('List Element ', list_element)
-					print('Tuple Element ', tuple_element)
 					
 					if tuple_element > 1:
 					
@@ -78,7 +75,6 @@ class readFiles:
 					else:
 						print("Elements ", readFiles.email_details[list_recurse][list_element][tuple_element])
 						read_element = readFiles.email_details[list_recurse][list_element][tuple_element]
-					print('Type ', type(read_element))
 					tuple_element += 1
 			print ('Email Details ', readFiles.email_details)
 
